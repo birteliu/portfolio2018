@@ -24,7 +24,6 @@
     <meta property="og:site_name" content="Portfolio">
     <meta property="og:locale" content="zh_TW">
     <meta property="og:locale:alternate" content="en_US">
-    <link rel="stylesheet" href="css/content-filter.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="css/portfolio2018.less">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -35,7 +34,7 @@
 <body>
     <header>
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top navbar-light">
             <a class="navbar-brand" href="#">HAO HSUAN</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,50 +54,54 @@
             </div>
         </nav>
     </header>
-    <div class="wave">
-        <div class="wave1"></div>
-        <div class="wave2"></div>
-        <div class="wave2"></div>
-    </div>
-    <main class="cd-main-content">
-        <div class="cd-tab-filter-wrapper">
-            <div class="cd-tab-filter">
-                <ul class="cd-filters">
-                    <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-                    <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Web Design</a></li>
-                    <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Graphic Design</a></li>
-                </ul>
-                <!-- cd-filters -->
-            </div>
-            <!-- cd-tab-filter -->
+    <div class="container-fluid">
+        <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave2"></div>
+            <div class="wave2"></div>
         </div>
-        <!-- cd-tab-filter-wrapper -->
-        <section class="cd-gallery">
-            <ul>
-                <li class="mix color-1 check1 radio2 option3"><img src="img/img-1.jpg" alt="Image 1"></li>
-                <li class="mix color-2 check2 radio2 option2"><img src="img/img-2.jpg" alt="Image 2"></li>
-                <li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
-                <li class="mix color-1 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
-                <li class="mix color-1 check1 radio3 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
-                <li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
-                <li class="mix color-2 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
-                <li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
-                <li class="mix color-2 check1 radio2 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
-                <li class="mix color-1 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
-                <li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
-                <li class="mix color-2 check1 radio3 option1"><img src="img/img-12.jpg" alt="Image 12"></li>
-                <li class="gap"></li>
-                <li class="gap"></li>
-                <li class="gap"></li>
-            </ul>
-        </section>
-        <!-- cd-gallery -->
-    </main>
-    <!-- cd-main-content -->
+    </div>
+    <div class="container-fluid works-content">
+        <main class="cd-main-content">
+            <div class="cd-tab-filter-wrapper">
+                <div class="cd-tab-filter">
+                    <ul class="cd-filters">
+                        <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Web Design</a></li>
+                        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Graphic Design</a></li>
+                    </ul>
+                    <!-- cd-filters -->
+                </div>
+                <!-- cd-tab-filter -->
+            </div>
+            <!-- cd-tab-filter-wrapper -->
+            <section class="cd-gallery">
+                <ul>
+                    <li class="mix color-1 check1 radio2 option3"><img src="img/img-1.jpg" alt="Image 1"></li>
+                    <li class="mix color-2 check2 radio2 option2"><img src="img/img-2.jpg" alt="Image 2"></li>
+                    <li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
+                    <li class="mix color-1 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
+                    <li class="mix color-1 check1 radio3 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
+                    <li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
+                    <li class="mix color-2 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
+                    <li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
+                    <li class="mix color-2 check1 radio2 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
+                    <li class="mix color-1 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
+                    <li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
+                    <li class="mix color-2 check1 radio3 option1"><img src="img/img-12.jpg" alt="Image 12"></li>
+                    <li class="gap"></li>
+                    <li class="gap"></li>
+                    <li class="gap"></li>
+                </ul>
+            </section>
+            <!-- cd-gallery -->
+        </main>
+        <!-- cd-main-content -->
+    </div>
     <footer class="footer">
-      <div class="container">
-        <span class="text-muted">© Copyright 2018 - Birteliu</span>
-      </div>
+        <div class="container">
+            <span class="text-muted">© Copyright 2018 - Birteliu</span>
+        </div>
     </footer>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>

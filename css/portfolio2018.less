@@ -7,9 +7,27 @@ header {
             font-weight: bold;
             letter-spacing: 2px;
             padding: 30px 50px 10px 50px;
+            @media (max-width: 450px) {
+            	padding: 25px 20px;
+            }
+        }
+        button.navbar-toggler {
+        	border: none;
+        	padding: 30px 50px 10px 50px;
+        	@media (max-width: 450px) {
+            	padding: 25px 20px;
+          }
         }
         ul.navbar-nav {
             padding: 30px 50px 10px 50px;
+            @media (max-width: 767px) {
+            	text-align: right;
+            	background-color: #f9f9f9;
+            	padding-bottom: 30px;
+            }
+            @media (max-width: 450px) {
+								padding: 20px;
+            }
         }
         a.nav-link {
             color: #9A9A9A;
@@ -23,8 +41,10 @@ header {
 }
 
 div.wave {
-		padding-left: 63px;
-		padding-bottom: 30px;
+    padding: 10px 50px 30px 50px;
+    @media (max-width: 450px) {
+    	padding: 10px 20px;
+    }
     .wave1 {
         margin-top: 110px;
         width: 15rem;
@@ -32,6 +52,9 @@ div.wave {
         background-size: 12px 12px;
         background-repeat: repeat-x;
         background-image: linear-gradient(135deg, transparent 45%, #E3E3E3, transparent 60%), linear-gradient(45deg, transparent 45%, #E3E3E3, transparent 60%);
+				@media (max-width: 450px) {
+						width: 6rem;	
+				}
     }
     .wave2 {
         margin-top: 3px;
@@ -40,5 +63,126 @@ div.wave {
         background-size: 12px 12px;
         background-repeat: repeat-x;
         background-image: linear-gradient(135deg, transparent 45%, #E3E3E3, transparent 60%), linear-gradient(45deg, transparent 45%, #E3E3E3, transparent 60%);
+        		@media (max-width: 450px) {
+						width: 6rem;	
+				}
+    }
+}
+
+.works-content {
+    .cd-main-content {
+        position: relative;
+        min-height: 100vh;
+        padding: 10px 50px;
+        @media (max-width: 450px) {
+    				padding: 20px;
+    		}
+    }
+
+    .cd-main-content:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* xtab-filter */
+    .cd-tab-filter-wrapper {
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    .cd-tab-filter {
+        width: 100%;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+    }
+
+    .cd-tab-filter ul {
+        padding: 0;
+    }
+
+    .cd-tab-filter li {
+        display: inline-block;
+    }
+
+    .cd-tab-filter a {
+        color: #ACACAC;
+        font-family: 'Lato', sans-serif;
+        padding-right: 0.5em;
+        width: auto;
+        color: #ACACAC;
+        font-size: 1rem;
+        display: inline-block;
+    }
+
+    .cd-tab-filter a:hover {
+        text-decoration: none;
+        color: #303030;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .cd-tab-filter a.selected {
+        background: transparent;
+        color: #626262;
+    }
+    /* xgallery  */
+    .cd-gallery {
+        background-color: #fff;
+        width: 100%;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+        padding: 5px 0;
+    }
+
+    .cd-gallery ul {
+        text-align: justify;
+        padding: 10px 0px;
+    }
+
+    .cd-gallery ul:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .cd-gallery li {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        display: none;
+        margin-bottom: 2em;
+    }
+
+    .cd-gallery li.gap {
+        /* used in combination with text-align: justify to align gallery elements */
+        opacity: 0;
+        height: 0;
+        display: inline-block;
+    }
+
+    .cd-gallery img {
+        display: block;
+        width: 100%;
+    }
+
+    .cd-gallery .cd-fail-message {
+        display: none;
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        .cd-gallery li {
+            width: 48%;
+        }
+        .cd-gallery ul {
+            text-align: justify;
+        }
+    }
+
+    @media (min-width: 1170px) {
+        .cd-gallery li {
+            width: 23%;
+        }
     }
 }
