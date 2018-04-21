@@ -26,13 +26,19 @@ header {
             	padding-bottom: 30px;
             }
             @media (max-width: 450px) {
-								padding: 20px;
+				padding: 20px;
             }
         }
         a.nav-link {
             color: #9A9A9A;
             font-family: 'Lato', sans-serif;
             letter-spacing: 0.5px;
+            &:hover {
+                color: darken(#9a9a9a, 20%);
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                transition: all 0.5s;
+            }
         }
         a.active {
             color: #979797;
@@ -189,9 +195,13 @@ div.wave {
 footer {
 	background-color: #303030;
 	padding: 30px 0;
+	font-size: 90%;
 	.col-8 {
 		color: #F2F2F2;
 		padding: 0;
+		@media (max-width: 575px) {
+			padding: 0 20px;
+		}
 	}
 	.col-4 {
 		color: #f2f2f2;
