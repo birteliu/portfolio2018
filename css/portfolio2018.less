@@ -201,6 +201,16 @@ div.wave {
     }
     p {
         font-size: 0.9em;
+        a {
+            color: #626262;
+            &:hover {
+                text-decoration: none;
+                color: lighten(#626262, 10%);
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+        }
     }
     .logotype {
         p {
