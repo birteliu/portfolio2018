@@ -295,16 +295,18 @@ div.wave {
                     display: inline-block;
                     padding: 5px 5px 0 0;   
                 }
-                
                 a {
                     color: #9A9A9A;
                     &:hover {
                         text-decoration: none;
-                        color: darken(#9a9a9a, 20%);
+                        color: lighten(#9a9a9a, 20%);
                         -webkit-transition: all 0.5s;
                         -moz-transition: all 0.5s;
                         transition: all 0.5s;
                     }
+                }
+                a.active {
+                    color: lighten(#9a9a9a, 20%);
                 }
             }
         }
