@@ -123,6 +123,10 @@ div.wave {
         color: #ACACAC;
         font-size: 1rem;
         display: inline-block;
+        @media(max-width: 450px) {
+            font-size: 0.9em;
+            padding-right: 0.3em;
+        }
     }
 
     .cd-tab-filter a:hover {
@@ -199,6 +203,14 @@ div.wave {
 .works-content .cd-gallery {
     button {
         padding: 0;
+        background-color: #fff;
+        &:hover {
+            border: 1px solid #ececec;
+            border-radius: 0;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
     }
     figcaption {
         padding-top: 8px;
@@ -219,6 +231,15 @@ div.wave {
     .logotype {
         p {
             padding: 1em;
+        }
+    }
+    .modal-header {
+        h5 {
+            text-align: left;
+            @media(max-width: 350px) {
+                font-size: 0.9em;
+                padding-top: 5px;
+            }
         }
     }
     .modal-body {
