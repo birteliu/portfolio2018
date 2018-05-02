@@ -53,7 +53,7 @@ header {
 div.wave {
     padding: 10px 50px 30px 50px;
     @media (max-width: 450px) {
-    	padding: 10px 20px;
+    	padding: 1px 20px 10px 20px;
     }
     .wave1 {
         margin-top: 110px;
@@ -249,11 +249,9 @@ div.wave {
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
-            padding-top: 30px;
             height: 0;
             overflow: hidden;
-            margin: 20px 0;
-            border-radius: 5px;
+            margin: 0 0 1em 0;
           }
           .video-container iframe, .video-container object, .video-container embed {
             position: absolute;
@@ -270,6 +268,13 @@ div.wave {
     .close-btn {
         margin: auto;
         width: 100%;
+        &:hover {
+            border: 1px solid #fff;
+        }
+    }
+    .btn:hover {
+        border-radius: 0.3rem;
+        border-color: #fff;
     }
 }
 .about-content {
